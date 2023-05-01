@@ -1,4 +1,7 @@
 var taskarray = []
+const randomtask = ["Lavar a louça","Tirar o lixo", "Dar água para as plantas",
+ "Secar os gelos", "Ler um livro","Plantar uma árvore", "Brincar com o cachorro", "Estudar programação", 
+"Beber água", "organizar o desktop", "Assistir TV", "Pintar um quadro", "Atualizar a playlist"]
 function pegar() {
 
     const texto = document.getElementById("entrada");
@@ -14,6 +17,7 @@ function pegar() {
         listagot.appendChild(li)
         addlistener();
     //});
+        texto.value = ""
 };
 function checkifchecked(){
     const CheckBoxes = document.querySelectorAll('#lista input[type="checkbox"]');
@@ -36,3 +40,23 @@ function addlistener(){
     
     CheckBoxes.forEach(checkbox => checkbox.addEventListener("click",checkifchecked))
 }
+
+function cleanchecked(){
+    const CheckBoxes = document.querySelectorAll('#lista input[type="checkbox"]');
+    const lista = document.querySelector("#lista")
+    CheckBoxes.forEach(checkbox => {
+        if (checkbox.checked == true){
+            const itemcheckbox = checkbox.parentNode;
+            lista.removeChild(itemcheckbox)
+        }
+    })
+}
+
+function selectrandom(arr){
+    const indice = Math.floor(Math.random()*arr.length)
+    const item = arr[indice]
+    return item
+
+}
+ 
+

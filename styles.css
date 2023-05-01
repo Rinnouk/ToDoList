@@ -18,7 +18,8 @@
  }
 #entrada {
   background-color: rgb(255, 255, 255);
-  
+  height: 25px;
+  border-radius: 5px;
   
 
 
@@ -26,6 +27,25 @@
 
 .crossed{
   text-decoration: line-through;
+  color: grey;
  
+}
+#lista{
+  list-style-type: none;
+  font-size: large;
+}
+button{
+  border-radius: 10px;
+  font-size: large;
+}
+
+#clean{
+background-color: rgb(255, 58, 58);
+color: white;
+}
+#add{
+  background-color: rgb(181, 252, 181);
+  color: black;
+
 }
 

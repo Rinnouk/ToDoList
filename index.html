@@ -13,14 +13,15 @@
     <div>
         <H1>T A R E F A S</H1>
         <input id="entrada" 
-            placeholder="Lavar a louça..."
             type="text"
             onfocus="this.placeholder='' "
-            onblur="this.placeholder='Lavar a louça...' ">
+            onblur="this.placeholder=selectrandom(randomtask) ">
+            <script>document.getElementById("entrada").placeholder = selectrandom(randomtask)</script>
        
-        <button onclick="pegar()">Adicionar Tarefa</button>
+        <button onclick="pegar()" id="add">Adicionar Tarefa</button>
+        <button onclick="cleanchecked()" id="clean">limpar tarefas completas</button>
     </div>
-    <li></li>
+    
     <ul id="lista">
     </ul>
 </body>
