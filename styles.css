@@ -33,6 +33,7 @@
   font-size: large;
   border: none;
   text-indent: 7px;
+  margin-right: 10px
   
 
 
@@ -77,6 +78,7 @@ margin-top: 5px;
   background-color: rgb(181, 252, 181);
   color: black;
   margin-top: 5px;
+  margin-right: 10px;
 
 }
 #add:active{
