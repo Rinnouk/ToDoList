@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO-LIST</title>
+    
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <H1>T A R E F A S</H1>
-    <ul>
-
-
+    <div>
+        <H1>T A R E F A S</H1>
+        <input id="entrada" 
+            placeholder="Lavar a louça..."
+            type="text"
+            onfocus="this.placeholder='' "
+            onblur="this.placeholder='Lavar a louça...' ">
+       
+        <button onclick="pegar()">Adicionar Tarefa</button>
+    </div>
+    <li></li>
+    <ul id="lista">
     </ul>
 </body>
 </html>
